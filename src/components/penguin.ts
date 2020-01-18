@@ -1,4 +1,4 @@
-export class Square {
+export class Penguin {
   private color = 'red';
   private x = 0;
   private y = 0;

@@ -14,7 +14,7 @@ export class CanvasComponent {
   ctx: CanvasRenderingContext2D;
   requestId;
   interval;
-  squares: Penguin[] = [];
+  penguins: Penguin[] = [];
 
   constructor(private ngZone: NgZone) {}
 
@@ -29,15 +29,15 @@ export class CanvasComponent {
 
   tick() {
     this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
-    this.squares.forEach((square: Penguin) => {
-      square.moveRight();
+    this.penguins.forEach((penguin: Penguin) => {
+      penguin.move();
     });
     this.requestId = requestAnimationFrame(() => this.tick);
   }
 
   play() {
-    const square = new Penguin(this.ctx);
-    this.squares = this.squares.concat(square);
+    const penguin = new Penguin(this.ctx);
+    this.penguins = this.penguins.concat(penguin);
   }
 
   ngOnDestroy() {

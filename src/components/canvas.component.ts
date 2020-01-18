@@ -1,10 +1,10 @@
 import { Component, ViewChild, ElementRef, NgZone } from '@angular/core';
-import { Square } from './square';
+import { Penguin } from './penguinLogic';
 
 @Component({
   selector: 'canvas-component',
   template: `
-    <canvas #canvas width="600" height="300"></canvas>
+    <canvas #canvas width="800" height="480"></canvas>
     <button (click)="play()">Play</button>
   `,
   styles: ['canvas { border-style: solid }']
@@ -14,7 +14,7 @@ export class CanvasComponent {
   ctx: CanvasRenderingContext2D;
   requestId;
   interval;
-  squares: Square[] = [];
+  squares: Penguin[] = [];
 
   constructor(private ngZone: NgZone) {}
 
@@ -29,14 +29,14 @@ export class CanvasComponent {
 
   tick() {
     this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
-    this.squares.forEach((square: Square) => {
+    this.squares.forEach((square: Penguin) => {
       square.moveRight();
     });
     this.requestId = requestAnimationFrame(() => this.tick);
   }
 
   play() {
-    const square = new Square(this.ctx);
+    const square = new Penguin(this.ctx);
     this.squares = this.squares.concat(square);
   }
 

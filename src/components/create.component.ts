@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 
 @Component({
   template: `
-    <h1>COMPLETE THIS PAGE</h1>
+    <card></card>
   `
 })
 export class CreateComponent {}

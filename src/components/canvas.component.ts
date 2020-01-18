@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef, NgZone } from '@angular/core';
-import { Penguin } from './penguinLogic';
+import { Penguin } from './penguin';
 
 @Component({
   selector: 'canvas-component',

@@ -283,3 +283,7 @@ svg#clouds {
     visibility: hidden;
   }
 }
+
+canvas {
+  border: 1px solid black;
+}

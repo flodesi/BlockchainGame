@@ -14,9 +14,17 @@ import {
 
 import { ToolbarComponent } from "../components/toolbar.component";
 import { CanvasComponent } from "../components/canvas.component";
+import { EnclosureComponent } from "../components/enclosure.component";
+import { CreateComponent } from "../components/create.component";
 
 @NgModule({
-  declarations: [AppComponent, ToolbarComponent, CanvasComponent],
+  declarations: [
+    AppComponent,
+    ToolbarComponent,
+    CanvasComponent,
+    EnclosureComponent,
+    CreateComponent
+  ],
   imports: [
     MatToolbarModule,
     MatSidenavModule,

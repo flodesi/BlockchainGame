@@ -1,5 +1,5 @@
 export class Penguin {
-  private image = new Image(50, 50);
+  public image = new Image(50, 50);
   private color = 'red';
   private x = Math.random() * 800;
   private y = Math.random() * 480;
@@ -60,6 +60,6 @@ export class Penguin {
   }
 
   private flip(){
-
+    
   }
 }

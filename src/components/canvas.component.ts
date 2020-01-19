@@ -5,7 +5,7 @@ import { Penguin } from "./penguin";
   selector: "canvas-component",
   template: `
     <canvas #canvas width="750" height="400"></canvas>
-    <button (click)="play()">Generate</button>
+    <button (click)="play()" mat-raised-button color="primary">Generate</button>
   `,
   styles: [
     "canvas { border-width: 3px; border-style: double; border-color: #1C6EA4; }"

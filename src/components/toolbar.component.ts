@@ -6,6 +6,7 @@ import { Component } from "@angular/core";
   template: `
     <mat-toolbar color="primary">
       <span><img width="40" src="assets/img/base_penguin.png" /> </span>
+      <span> Club Crypto Penguins </span>
       <span class="fill-toolbar-space"></span>
       <a routerLink="/enclosure">Enclosure</a>
       <a routerLink="/create">Create</a>

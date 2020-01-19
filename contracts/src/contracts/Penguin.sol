@@ -45,4 +45,24 @@ contract Penguin is ERC721BasicToken {
         penguin1.birthtime = penguin1.birthtime * 2;
         penguin2.birthtime = penguin2.birthtime * 2;
     }
+
+    function getName(uint _penguinID) constant returns (string) {
+        return penguins[_penguinID].name;
+    }
+
+    function getColor(uint _penguinID) constant returns (uint) {
+        return penguins[_penguinID].color;
+    }
+
+    function getSize(uint _penguinID) constant returns (uint) {
+        return penguins[_penguinID].size;
+    }
+
+    function getHat(uint _penguinID) constant returns (uint) {
+        return penguins[_penguinID].hat;
+    }
+
+    function getBirthTime(uint _penguinID) constant returns (uint) {
+        return penguins[_penguinID].birthtime;
+    }
 }

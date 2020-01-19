@@ -9,13 +9,15 @@ import {
   MatIconModule,
   MatSidenavModule,
   MatListModule,
-  MatButtonModule
+  MatButtonModule,
+  MatCardModule
 } from "@angular/material";
 
 import { ToolbarComponent } from "../components/toolbar.component";
 import { CanvasComponent } from "../components/canvas.component";
 import { EnclosureComponent } from "../components/enclosure.component";
 import { CreateComponent } from "../components/create.component";
+import { CardComponent } from 'src/components/card.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { CreateComponent } from "../components/create.component";
     ToolbarComponent,
     CanvasComponent,
     EnclosureComponent,
-    CreateComponent
+    CreateComponent,
+    CardComponent
   ],
   imports: [
     MatToolbarModule,
@@ -33,7 +36,8 @@ import { CreateComponent } from "../components/create.component";
     MatIconModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,11 +1,6 @@
 export class Penguin {
-<<<<<<< HEAD
   public image = new Image(50, 50);
   private color = 'red';
-=======
-  private image = new Image(50, 50);
-  private color = "red";
->>>>>>> 964b372763c90f6371793a6b7f00112f4d8840c1
   private x = Math.random() * 800;
   private y = Math.random() * 480;
 

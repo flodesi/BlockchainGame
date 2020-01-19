@@ -7,7 +7,9 @@ import { Penguin } from "./penguin";
     <canvas #canvas width="750" height="400"></canvas>
     <button (click)="play()">Play</button>
   `,
-  styles: ["canvas { border-style: solid }"]
+  styles: [
+    "canvas { border-width: 3px; border-style: double; border-color: #1C6EA4; }"
+  ]
 })
 export class CanvasComponent {
   @ViewChild("canvas", { static: true }) canvas: ElementRef<HTMLCanvasElement>;

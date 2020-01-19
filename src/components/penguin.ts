@@ -1,8 +1,8 @@
 export class Penguin {
   public image = new Image(50, 50);
   private color = 'red';
-  private x = Math.random() * 800;
-  private y = Math.random() * 480;
+  private x = Math.random() * 750;
+  private y = Math.random() * 400;
 
   constructor(private ctx: CanvasRenderingContext2D) {
     this.image.src = "../assets/img/base_penguin.png";

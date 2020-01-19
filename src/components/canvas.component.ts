@@ -4,7 +4,7 @@ import { Penguin } from "./penguin";
 @Component({
   selector: "canvas-component",
   template: `
-    <canvas #canvas width="800" height="480"></canvas>
+    <canvas #canvas width="750" height="400"></canvas>
     <button (click)="play()">Play</button>
   `,
   styles: ["canvas { border-style: solid }"]

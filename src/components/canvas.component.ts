@@ -36,7 +36,8 @@ export class CanvasComponent {
   }
 
   play() {
-    const penguin = new Penguin(this.ctx);
+    // var num = Math.floor(Math.random()*10);
+    var penguin = new Penguin(this.ctx);
     this.penguins = this.penguins.concat(penguin);
   }
 

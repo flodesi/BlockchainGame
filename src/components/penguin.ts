@@ -5,7 +5,33 @@ export class Penguin {
   private y = Math.random() * 400;
 
   constructor(private ctx: CanvasRenderingContext2D) {
-    this.image.src = "../assets/img/base_penguin.png";
+    this.unblink();
+  }
+
+  private assign() {
+    switch(this.idNum){
+      case 0: {
+        this.image.src = "../assets/img/base_penguin_blinking.png";
+        break;
+      } case 1: {
+        this.image.src = "../assets/img/grey_penguin_blinking.png";
+        break;
+      } case 2: {
+        this.image.src = "../assets/img/blue_penguin_blinking.png";
+        break;
+      } case 3: {
+        this.image.src = "../assets/img/red_penguin_blinking.png";
+        break;
+      } case 4: {
+        this.image.src = "../assets/img/orange_penguin_blinking.png";
+        break;
+      } case 5: {
+        this.image.src = "../assets/img/green_penguin_blinking.png";
+        break;
+      } case 6: {
+        this.image.src = "../assets/img/rainbow_penguin_blinking.png";
+      }
+    }
   }
 
   move() {
@@ -25,7 +51,7 @@ export class Penguin {
       this.moveDown();
     }
     if (randB < 0.1) {
-      this.blink();
+      this.assign();
     } else {
       this.unblink();
     }
@@ -48,11 +74,30 @@ export class Penguin {
     this.x = this.x + 5;
   }
 
-  private blink() {
-    this.image.src = "../assets/img/base_penguin_blinking.png";
-  }
   private unblink() {
-    this.image.src = "../assets/img/base_penguin.png";
+    switch(this.idNum){
+      case 0: {
+        this.image.src = "../assets/img/base_penguin.png";
+        break;
+      } case 1: {
+        this.image.src = "../assets/img/grey_penguin.png";
+        break;
+      } case 2: {
+        this.image.src = "../assets/img/blue_penguin.png";
+        break;
+      } case 3: {
+        this.image.src = "../assets/img/red_penguin.png";
+        break;
+      } case 4: {
+        this.image.src = "../assets/img/orange_penguin.png";
+        break;
+      } case 5: {
+        this.image.src = "../assets/img/green_penguin.png";
+        break;
+      } case 6: {
+        this.image.src = "../assets/img/rainbow_penguin.png";
+      }
+    }
   }
 
   private draw() {

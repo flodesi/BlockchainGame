@@ -10,9 +10,10 @@ import {
   MatSidenavModule,
   MatListModule,
   MatButtonModule,
-  MatCardModule
+  MatDividerModule,
+  MatCardModule,
+  MatCheckboxModule
 } from "@angular/material";
-import { MatDividerModule } from "@angular/material/divider";
 
 import { ToolbarComponent } from "../components/toolbar.component";
 import { CanvasComponent } from "../components/canvas.component";
@@ -39,7 +40,8 @@ import { CardComponent } from "src/components/card.component";
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

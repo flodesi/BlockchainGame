@@ -1,11 +1,10 @@
 export class Penguin {
   public image = new Image(50, 50);
   private color = "red";
-  private idNum = Math.floor(Math.random() * 7);
   private x = Math.random() * 750;
   private y = Math.random() * 400;
 
-  constructor(private ctx: CanvasRenderingContext2D) {
+  constructor(private ctx: CanvasRenderingContext2D, private idNum) {
     this.unblink();
   }
 

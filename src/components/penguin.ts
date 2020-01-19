@@ -59,12 +59,5 @@ export class Penguin {
     this.ctx.drawImage(this.image, this.x, this.y);
   }
 
-<<<<<<< HEAD
-  private flip(){
-    
-  }
-}
-=======
   private flip() {}
 }
->>>>>>> 964b372763c90f6371793a6b7f00112f4d8840c1

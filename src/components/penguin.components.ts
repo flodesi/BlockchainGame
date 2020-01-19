@@ -1,15 +1,13 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'penguin',
+  selector: "penguin",
   template: `
-  <img
-    width="40"
-    alt="Crypto Club Penguin"
-    src="assets/img/base_penguin.png"
-  />
+    <img
+      width="40"
+      alt="Crypto Club Penguin"
+      src="assets/img/base_penguin.png"
+    />
   `
 })
-
-export class PenguinComponent {
-}
+export class PenguinComponent {}

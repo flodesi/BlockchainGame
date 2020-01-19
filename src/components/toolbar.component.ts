@@ -5,7 +5,9 @@ import { Component } from "@angular/core";
   selector: "toolbar",
   template: `
     <mat-toolbar color="primary">
-      <span><img width="40" src="assets/img/base_penguin.png" /> </span>
+      <a routerLink="/enclosure"
+        ><img width="40" src="assets/img/base_penguin.png" />
+      </a>
       <span class="fill-toolbar-space"></span>
       <a routerLink="/enclosure">Enclosure</a>
       <a routerLink="/create">Create</a>

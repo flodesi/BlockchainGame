@@ -6,6 +6,8 @@ if (typeof web3 !== 'undefined') {
   web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7545"));
 }
 
+var penguinNum;
+
 var EthereumSession = web3.eth.contract([
 	{
 		"constant": true,
@@ -442,7 +444,7 @@ web3.eth.defaultAccount = web3.eth.accounts[0];
 ethereumSessionInstance.setTheInt(4546);
 
 //wait until the transaction is mined.
-console.log(ethereumSessionInstance.getTheInt());
+console.log(ethereumSessionInstance.getColor(0));
 
 //Truffle-Contract
 
@@ -881,6 +883,6 @@ EthereumSessionTruffle.at("0xb737254f7e1a8b59d22fd135418304a8b34a82ad").then(ins
 	esTruffleInstance = instance;
 	console.log(instance);
 	return instance.getColor(0);
-}).then(result => { console.log(result);});
+}).then(result => { console.log("This" + result);});
 // 	return esTruffleInstance.getTheInt();
 // }).then(result => { console.log(result);});

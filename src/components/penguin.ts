@@ -1,34 +1,41 @@
 export class Penguin {
   public image = new Image(50, 50);
+  private color = "red";
   private idNum = Math.floor(Math.random() * 7);
-  private x = Math.random() * 800;
-  private y = Math.random() * 480;
+  private x = Math.random() * 750;
+  private y = Math.random() * 400;
 
   constructor(private ctx: CanvasRenderingContext2D) {
     this.unblink();
   }
 
   private assign() {
-    switch(this.idNum){
+    switch (this.idNum) {
       case 0: {
         this.image.src = "../assets/img/base_penguin_blinking.png";
         break;
-      } case 1: {
+      }
+      case 1: {
         this.image.src = "../assets/img/grey_penguin_blinking.png";
         break;
-      } case 2: {
+      }
+      case 2: {
         this.image.src = "../assets/img/blue_penguin_blinking.png";
         break;
-      } case 3: {
+      }
+      case 3: {
         this.image.src = "../assets/img/red_penguin_blinking.png";
         break;
-      } case 4: {
+      }
+      case 4: {
         this.image.src = "../assets/img/orange_penguin_blinking.png";
         break;
-      } case 5: {
+      }
+      case 5: {
         this.image.src = "../assets/img/green_penguin_blinking.png";
         break;
-      } case 6: {
+      }
+      case 6: {
         this.image.src = "../assets/img/rainbow_penguin_blinking.png";
       }
     }
@@ -75,26 +82,32 @@ export class Penguin {
   }
 
   private unblink() {
-    switch(this.idNum){
+    switch (this.idNum) {
       case 0: {
         this.image.src = "../assets/img/base_penguin.png";
         break;
-      } case 1: {
+      }
+      case 1: {
         this.image.src = "../assets/img/grey_penguin.png";
         break;
-      } case 2: {
+      }
+      case 2: {
         this.image.src = "../assets/img/blue_penguin.png";
         break;
-      } case 3: {
+      }
+      case 3: {
         this.image.src = "../assets/img/red_penguin.png";
         break;
-      } case 4: {
+      }
+      case 4: {
         this.image.src = "../assets/img/orange_penguin.png";
         break;
-      } case 5: {
+      }
+      case 5: {
         this.image.src = "../assets/img/green_penguin.png";
         break;
-      } case 6: {
+      }
+      case 6: {
         this.image.src = "../assets/img/rainbow_penguin.png";
       }
     }

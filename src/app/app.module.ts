@@ -12,12 +12,13 @@ import {
   MatButtonModule,
   MatCardModule
 } from "@angular/material";
+import { MatDividerModule } from "@angular/material/divider";
 
 import { ToolbarComponent } from "../components/toolbar.component";
 import { CanvasComponent } from "../components/canvas.component";
 import { EnclosureComponent } from "../components/enclosure.component";
 import { CreateComponent } from "../components/create.component";
-import { CardComponent } from 'src/components/card.component';
+import { CardComponent } from "src/components/card.component";
 
 @NgModule({
   declarations: [
@@ -29,15 +30,16 @@ import { CardComponent } from 'src/components/card.component';
     CardComponent
   ],
   imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
     MatIconModule,
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

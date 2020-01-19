@@ -8,6 +8,7 @@ import { Component } from "@angular/core";
       <a routerLink="/enclosure"
         ><img width="40" src="assets/img/base_penguin.png" />
       </a>
+      <span> Arctic Miner </span>
       <span class="fill-toolbar-space"></span>
       <a routerLink="/enclosure">Enclosure</a>
       <a routerLink="/create">Create</a>

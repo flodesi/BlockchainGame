@@ -7,8 +7,8 @@ var numTimes = 0;
   selector: "canvas-component",
   template: `
     <canvas #canvas width="750" height="400"></canvas>
-    <button (click)="play()">Generate</button>
-    <button (click)="update()">Update</button>
+    <button (click)="play()" mat-raised-button color="primary">Generate</button>
+    <button (click)="update()" mat-raised-button color="primary">Update</button>
   `,
   styles: [
     "canvas { border-width: 3px; border-style: double; border-color: #1C6EA4; }"
